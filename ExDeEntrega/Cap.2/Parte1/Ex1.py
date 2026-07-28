@@ -15,6 +15,10 @@ for C in range (0 ,Tamanho) :
 Tamanho -= Vazio
 print('Quantas letras tem em seu nome : ',Tamanho)
 
-Nome = Nome[:MarcadorInicio] + ' do Inatel'
+if MarcadorInicio!=0 :
+   Nome = Nome[:MarcadorInicio] + ' do Inatel'
+else :
+   Nome = Nome + ' do Inatel'
+
 print('Trocando o ultimo nome por outra palavra : ',Nome)
 
