@@ -1,19 +1,22 @@
-pessoa1={'nome':'leo' ,'peso':70}
-pessoa2={'nome':'andrey' ,'peso':60}
-pessoa3={'nome':'lucas' , 'peso':72}
+pessoas=[]
 
-pessoas = [pessoa1, pessoa2 ,pessoa3]
+for c in range (0 , 3) :
+  cria_pessoas = f"pessoa{c}"
+  nome = input("nome : ")
+  peso = float(input("peso : "))
+  cria_pessoas ={"nome":nome,"peso":peso}
+  pessoas.append(cria_pessoas)
 
-max_peso = pessoas[0]['peso']
-min_peso = max_peso
+max_peso = pessoas[0]
+min_peso = max_peso.copy()
 
 for c in range ( 0 , len(pessoas)) :
-   if pessoas[c]['peso'] > max_peso :
-      max_peso = pessoas[c]['peso']
-      max_peso_nome = pessoas[c]['nome']
-   if pessoas[c]['peso'] <min_peso :
-      min_peso = pessoas[c]['peso']
-      min_peso_nome = pessoas[c]['nome']
+   if pessoas[c]['peso'] > max_peso['peso'] :
+      max_peso['peso'] = pessoas[c]['peso']
+      max_peso['nome'] = pessoas[c]['nome']
+   if pessoas[c]['peso'] <min_peso['peso'] :
+      min_peso['peso'] = pessoas[c]['peso']
+      min_peso['nome'] = pessoas[c]['nome']
 
-print('Mais pesada : ' , max_peso_nome)
-print('Menos pesada : ',min_peso_nome)      
+print('Mais pesada : ' , max_peso['nome'])
+print('Menos pesada : ',min_peso['nome'])      
