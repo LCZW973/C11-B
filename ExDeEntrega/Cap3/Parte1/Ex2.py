@@ -9,10 +9,11 @@ print('modelos da loja B')
 for c in loja_two :
   print(c)
 
-modelos_disponiveis = loja_two | loja_one
-print('Total de modelos disponiveis : ',len(modelos_disponiveis))
+print('total de modelos disponiveis : ',len(loja_one|loja_two))
 
 modelos_semelhantes = loja_one & loja_two
-print('Modelo disponiveis nas duas lojas : ')
+
+print('modelos semelhantes : ')
 for c in modelos_semelhantes :
-  print(c)
+      print(c)
+      
