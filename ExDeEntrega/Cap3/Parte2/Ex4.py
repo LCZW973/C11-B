@@ -7,7 +7,7 @@ for c in range (0 , 3) :
   cria_pessoas ={"nome":nome,"peso":peso}
   pessoas.append(cria_pessoas)
 
-max_peso = pessoas[0]
+max_peso = pessoas[0].copy()
 min_peso = max_peso.copy()
 
 for c in range ( 0 , len(pessoas)) :
@@ -20,3 +20,4 @@ for c in range ( 0 , len(pessoas)) :
 
 print('Mais pesada : ' , max_peso['nome'])
 print('Menos pesada : ',min_peso['nome'])      
+ 
