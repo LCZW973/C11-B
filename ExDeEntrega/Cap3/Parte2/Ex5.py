@@ -6,7 +6,6 @@ for c in range ( 0 ,n) :
   idade= int(input('idade : '))
   sexo = input('sexo(M ou H) : ')
   lista_nome = f"pessoa_{c}"
-
   lista_nome = {'nome':nome,'idade':idade,'sexo':sexo}
   pessoas.append(lista_nome)
 
