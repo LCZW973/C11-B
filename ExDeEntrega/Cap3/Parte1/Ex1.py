@@ -1,13 +1,10 @@
 ordem_times = ['Barcelona','Atlético de Madrid','Osasuna','Elche','Alaves']
-
 #letra A
-print(' 2 primeiros times em ordem de colocacao')
-for c in range (0,2) :
-  print(ordem_times[c])
+print(' 3 primeiros times em ordem de colocacao')
+print(ordem_times[0:3])
 #letra B
 print('Dois ultimos colocados')
-for c in range (3,5) :
-  print(ordem_times[c])
+print(ordem_times[3:])
 #letra C
 print('Times em ordem alfabetica')
 print(sorted(ordem_times))
