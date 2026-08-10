@@ -57,3 +57,8 @@ np.random.seed(5)
 arr = np.random.randint(1,10,10)
 print(arr)
 
+#extraindo elementes unicos
+print(np.unique(arr))
+
+#contando elementos unicos
+print((np.unique(arr,return_counts=True))
