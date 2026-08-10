@@ -45,7 +45,23 @@ print(5*arr3)
 
 #estruturando uma matriz com contas
 mtz = np.arange(10,96,5)
-print(mtz.reshape(3,6))
+mtz = mtz.reshape(3,6)
+print(mtz)
+
+#extraindo a soma da primeira coluna
+print(mtz.sum(axis=0)[0])#eixo 0 = coluna
+print(mtz.sum(axis=1)[1])#eixo 1 = coluna
+
+
+
+
+
+
+
+
+
+
+
 
 
 
