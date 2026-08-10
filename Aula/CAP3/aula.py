@@ -29,6 +29,26 @@ print(arr.reshape(5,2))
 mtz = np.arange(2,21,2)
 print(mtz.reshape(2,5))
 
+#Operacoes entre numpy_arrays
+arr1=np.array([10,20,30,40,50])
+arr2=np.array([60,40,20,10,5])
+arr3 = arr1+arr2
+#Operacoes entre arrays
+print(arr3)
+print(arr1-arr2)
+print(arr1*arr2)
+#Concatenacao de arrays
+arr3 = np.concatenate([arr1,arr2])
+print(arr3)
+#Broadcasting-quando um escalar faz uma operacao com um array
+print(5*arr3)
+
+#estruturando uma matriz com contas
+mtz = np.arange(10,96,5)
+print(mtz.reshape(3,6))
+
+
+
 
 
 
