@@ -52,26 +52,8 @@ print(mtz)
 print(mtz.sum(axis=0)[0])#eixo 0 = coluna
 print(mtz.sum(axis=1)[1])#eixo 1 = coluna
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#numeros aleatorios no numpy_arrays,plantando a semente aleatoria
+np.random.seed(5)
+arr = np.random.randint(1,10,10)
+print(arr)
 
