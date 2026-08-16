@@ -1,5 +1,7 @@
-aluno = {'nome':'leo' , 'media': 49}
+nome = input('nome')
+media = float(input('media'))
 
+aluno = {'nome':nome,'media':media}
 if aluno['media'] >= 50 :
    aluno ['estado'] ='AP'
 else :
