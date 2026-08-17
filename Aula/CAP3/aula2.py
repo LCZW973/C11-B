@@ -22,4 +22,19 @@ print('dessa matriz retorne apenas os numeros pares')
 print(mtz%2==0)
 print(mtz[mtz%2==0])
 
-  
+#analises textuais com Numpy 
+arr = np.array(['Inatel','Casa Viva',
+                'ICC','CDG','eHealth',
+                'CSILab','RobotBulls',
+                'ProdLab','CRA','CRR'])
+
+print(arr)
+
+#submodulo do numpy pra trabalhar com textos : char
+#buscando qual texto aceita um padrao informado
+print(np.char.find(arr,'a'))
+#retornou a mascara
+print(np.char.find(arr,'a')>=0)
+cond = np.char.find(arr,'a')>=0
+print(mtz[cond])
+# para usar outra funcao base devo usar np.char.funcao(arr) em textos
